@@ -2,12 +2,72 @@
  * Your custom CSS file
  *************************************************************************/
 
+@font-face {
+  font-family: Raleway;
+  src: url("/fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("/fonts/Raleway-Italic.ttf");
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("/fonts/Raleway-Bold.ttf");
+  font-weight: bold;
+}
+
 .custom-dropdown {
   width: 240px;
 }
 
 .custom-textbox {
   width: 240px;
+}
+
+html, body {
+  font-family: Raleway;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #0e3dcc;
+}
+
+a:hover {
+  color: #353296;
+}
+
+h1 {
+  font-size: 18pt;
+  margin: 0 0 0 0;
+  line-height: 140%;
+}
+
+h2 {
+  font-size: 16pt;
+  font-weight: bold;
+  margin: 0 0 0 0;
+  line-height: 140%;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 14pt;
+  margin: 0 0 0 0;
+  font-weight: bold;
+  line-height: 130%;
+  padding-top: 10px;
+  padd
+
+div {
+  word-wrap: break-word;
 }
 
 #me {
