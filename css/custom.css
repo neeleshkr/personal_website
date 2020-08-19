@@ -4,18 +4,18 @@
 
 @font-face {
   font-family: Raleway;
-  src: url("/fonts/Raleway-Medium.ttf");
+  src: url("css/fonts/Raleway-Medium.ttf");
 }
 
 @font-face {
   font-family: Raleway;
-  src: url("/fonts/Raleway-Italic.ttf");
+  src: url("css/fonts/Raleway-Italic.ttf");
   font-style: oblique;
 }
 
 @font-face {
   font-family: Raleway;
-  src: url("/fonts/Raleway-Bold.ttf");
+  src: url("css/fonts/Raleway-Bold.ttf");
   font-weight: bold;
 }
 
