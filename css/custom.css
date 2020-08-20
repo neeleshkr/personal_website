@@ -90,6 +90,14 @@ div {
   color: #007bff;
 }
 
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+
 .filterDiv {
   float: left;
   background-color: #2196F3;
