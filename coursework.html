@@ -32,12 +32,13 @@
   <div class="content-container">
     <div class="content">
       <div class="content-table flex-column">
+        The table below is a convenient way to sort the classes I've taken in a few different ways; for a full list of classes and grades, see below!
         <div id="classButtons">
           <button class="btn active" onclick="filterSelection('all')"> All Classes</button>
-          <button class="btn" onclick="filterSelection('cars')"> Technical </button>
-          <button class="btn" onclick="filterSelection('animals')"> Graded </button>
-          <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-          <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+          <button class="btn" onclick="filterSelection('cars')"> Technical Only </button>
+          <button class="btn" onclick="filterSelection('animals')"> Graded Only </button>
+          <button class="btn" onclick="filterSelection('fruits')"> EE </button>
+          <button class="btn" onclick="filterSelection('colors')"> CS </button>
         </div>
         <div class="container">
           <div class="filterDiv cars">BMW</div>
@@ -54,6 +55,36 @@
           <div class="filterDiv fruits">Lemon</div>
           <div class="filterDiv animals">Cow</div>
         </div>
+      </div>
+      <div class="content-table flex-column">
+        Here's a full listing of all my coursework (including associated grades, professors, and semester.)
+        <table border="3" class="custom-table table-condensed table-striped">
+          <thead>
+            <tr class="bg-color-gray text-center">
+              <th>Berkeley Abbreviation</th>
+              <th>Topics Covered</th>
+              <th>Grade</th>
+              <th>Semester</th>
+              <th>Professor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-center">
+              <td><a href="https://cs162.eecs.berkeley.edu/" target="_blank">CS 162</a></td>
+              <td>Operating Systems, File Systems, Security, Systems Programming</td>
+              <td>A</td>
+              <td>Sp20</td>
+              <td>John Kubiatowicz</td>
+            </tr>
+            <tr class="text-center">
+              <td><a href="https://cs162.eecs.berkeley.edu/" target="_blank">EE 105</a></td>
+              <td>Analog Circuits, BJTs, MOSFETs, Transistor Design/Function, Circuit Design, Circuit Frequency Response, Nonideal Op-Amps</td>
+              <td>A+</td>
+              <td>Sp20</td>
+              <td>Ali Niknejad</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
