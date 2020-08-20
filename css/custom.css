@@ -94,8 +94,9 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
-th, td {
-  padding: 5px;
+
+.table-hover tbody:hover {
+  background-color: rgba(100, 200, 170, 0.15) !important;
 }
 
 .filterDiv {
