@@ -49,7 +49,7 @@
         <h2>Classes By Category</h2>
         <a class="anchor" id="categorizedclasses"></a>
         <hr>
-        <p class="text add-top-margin add-bottom-margin"> The table below is a convenient way to filter the classes I've taken; for a complete list, see <a href="#fullcourses">below!</a></p>
+        <p class="text add-top-margin add-bottom-margin"> The table below is a convenient way to filter the classes I've taken (displays classes satisfying <i>al</i> of selected criteria). For a complete list, see <a href="#fullcourses">below!</a></p>
         <div id="classButtons">
           <button id="all" class="classBtn active" onclick="displayFiltered()"> All Classes</button>
           <button id="tech" class="classBtn" onclick="displayFiltered()"> Technical </button>
@@ -317,12 +317,14 @@
       if (elem.className.indexOf("active") > -1) activeCategories.push(elem.id)
     });
 
-    activeCategories.forEach(function(item, index, array) {
-      x = document.getElementsByClassName("classFiltering");
-      for (i = 0; i < x.length; i++) {
-        if (x[i].className.indexOf(item) > -1) w3AddClass(x[i], "show");
-      }
-    });
+    x = document.getElementsByClassName("classFiltering");
+    for (i = 0; i < x.length; i++) {
+      var show = true;
+      activeCategories.forEach(function(item, index, array) {
+        if (x[i].className.indexOf(item) <= -1) show = false;
+      })
+      if (show) w3AddClass(x[i], "show");
+    }
   }
 
   // Add active class to the current control button (highlight it)
