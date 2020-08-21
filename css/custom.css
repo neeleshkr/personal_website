@@ -155,15 +155,15 @@ table, th, td {
 
 .column {
   float: left;
-  padding: 10px;
+  padding: 2px;
 }
 
 .left {
-  width: 36%;
+  width: 34%;
 }
 
 .middle, .right {
-  width: 31%;
+  width: 30%;
 }
 
 /* Clear floats after the columns */
