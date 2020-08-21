@@ -315,7 +315,7 @@
 
     categories.forEach(function(item, index, array) {
       x = document.getElementsByClassName("classFiltering");
-      if (x[i].className.indexOf(item) > -1) w3AddClass(x[i], "show");
+      if (x && x[i].className.indexOf(item) > -1) w3AddClass(x[i], "show");
     });
   }
 
