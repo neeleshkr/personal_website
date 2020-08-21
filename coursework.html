@@ -32,6 +32,19 @@
   <div class="content-container">
     <div class="content">
       <div class="content-table flex-column">
+        <h2>Classes Now (Fall 2020)</h2>
+        <hr>
+        <p class="text">
+          <a href="https://www2.eecs.berkeley.edu/Courses/EE151/" target="_blank">EE 151:</a> Digital Design
+        </p>
+        <p class="text">
+          <a href="https://www2.eecs.berkeley.edu/Courses/EE140/" target="_blank">EE 140:</a> Linear Integrated Circuits
+        </p>
+        <p class="text">
+          <a href="https://www2.eecs.berkeley.edu/Courses/EE127/" target="_blank">EE 127:</a> Optimization
+        </p>
+      </div>
+      <div class="content-table flex-column">
         <h2>Classes By Category</h2>
         <hr>
         <p class="text add-top-margin add-bottom-margin"> The table below is a convenient way to sort the classes I've taken in a few different ways; for a complete list, see below! </p>
@@ -57,13 +70,13 @@
           <div class="filterDiv gr tech cs">CS 70</div>
           <div class="filterDiv gr tech">Math 53C</div>
           <div class="filterDiv gr tech">Physics 7B</div>
-          <div class="filterDiv ud">History 122AC</div>
+          <div class="filterDiv ud">His. 122AC</div>
           <div class="filterDiv gr">ColWrit R4B</div>
-          <div class="filterDiv">EE 375</div>
           <div class="filterDiv">Vis Sci 24</div>
           <div class="filterDiv">MCB 90D</div>
           <div class="filterDiv tech cs">CS 9C</div>
           <div class="filterDiv cs">CS 195</div>
+          <div class="filterDiv">EE 375</div>
         </div>
       </div>
       <div class="content-table flex-column">
@@ -293,7 +306,7 @@
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
       var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
+      current[0].className = "btn";
       this.className += " active";
     });
   }
