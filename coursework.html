@@ -268,6 +268,21 @@
 </html>
 <script>
   filterSelection("all")
+  function displayFiltered() {
+    x = document.getElementsByClassName("classFiltering");
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+    }
+    let categories = ['gr', 'tech', 'ee', 'cs', 'ud'];
+    var btnContainer = document.getElementById("classButtons");
+    var activeBtns = btnContainer.getElementsByClassName("classBtn active");
+
+    categories.forEach(function(item, index, array) {
+      x = document.getElementsByClassName("classFiltering");
+      if (x[i].className.indexOf(item) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
   function filterSelection(c) {
     var x, i;
     x = document.getElementsByClassName("classFiltering");
@@ -315,6 +330,7 @@
       else {
         this.className = "classBtn active"
       }
+      displayFiltered();
     });
   }
 </script>
