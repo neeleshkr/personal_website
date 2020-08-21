@@ -51,12 +51,12 @@
         <hr>
         <p class="text add-top-margin add-bottom-margin"> The table below is a convenient way to sort the classes I've taken in a few different ways; for a complete list, see <a href="#fullcourses">below!</a></p>
         <div id="classButtons">
-          <button class="classBtn active" onclick="filterSelection('all')"> All Classes</button>
-          <button class="classBtn" onclick="displayFiltered()"> Technical Only </button>
-          <button class="classBtn" onclick="displayFiltered()"> Graded Only </button>
-          <button class="classBtn" onclick="displayFiltered()"> EE only </button>
-          <button class="classBtn" onclick="displayFiltered()"> CS only </button>
-          <button class="classBtn" onclick="displayFiltered()"> Upper Div only </button>
+          <button id="all" class="classBtn active" onclick="filterSelection('all')"> All Classes</button>
+          <button id="tech" class="classBtn" onclick="displayFiltered()"> Technical Only </button>
+          <button id="gr" class="classBtn" onclick="displayFiltered()"> Graded Only </button>
+          <button id="ee" class="classBtn" onclick="displayFiltered()"> EE only </button>
+          <button id="cs" class="classBtn" onclick="displayFiltered()"> CS only </button>
+          <button id="ud" class="classBtn" onclick="displayFiltered()"> Upper Div only </button>
         </div>
         <div class="container">
           <div class="classFiltering gr tech ee ud">EE 105</div>
@@ -310,12 +310,18 @@
       w3RemoveClass(x[i], "show");
     }
     let categories = ['gr', 'tech', 'ee', 'cs', 'ud'];
-    var btnContainer = document.getElementById("classButtons");
-    var activeBtns = btnContainer.getElementsByClassName("classBtn active");
+    var activeCategories = []
 
     categories.forEach(function(item, index, array) {
+      elem = document.getElementById(item);
+      if (elem.className.indexOf("active") > -1) activeCategories.push(elem.id)
+    });
+
+    activeCategories.forEach(function(item, index, array) {
       x = document.getElementsByClassName("classFiltering");
-      if (x && x[i].className.indexOf(item) > -1) w3AddClass(x[i], "show");
+      for (i = 0; i < x.length; i++) {
+        if (x[i].className.indexOf(item) > -1) w3AddClass(x[i], "show");
+      }
     });
   }
 
