@@ -308,6 +308,21 @@
     for (i = 0; i < x.length; i++) {
       w3RemoveClass(x[i], "show");
     }
+    let others = ['gr', 'tech', 'ee', 'cs', 'ud'];
+
+    var displayAllButton = true;
+    others.forEach(function(item, index, array) {
+      elem = document.getElementById(item);
+      if (elem.className.indexOf("active") > -1) displayAllButton = false;
+    });
+    x = document.getElementByID("all");
+    if (displayAllButton == false) {
+      x.className = "classBtn";
+    }
+    else {
+      x.className = "classBtn active";
+    }
+
     let categories = ['all', 'gr', 'tech', 'ee', 'cs', 'ud'];
     var activeCategories = []
 
@@ -336,20 +351,6 @@
       }
       else {
         this.className = "classBtn active";
-      }
-      let others = ['gr', 'tech', 'ee', 'cs', 'ud'];
-
-      var displayAllButton = true;
-      others.forEach(function(item, index, array) {
-        elem = document.getElementById(item);
-        if (elem.className.indexOf("active") > -1) displayAllButton = false;
-      });
-      x = document.getElementByID("all");
-      if (displayAllButton == false) {
-        x.className = "classBtn";
-      }
-      else {
-        x.className = "classBtn active";
       }
       displayFiltered();
     });
