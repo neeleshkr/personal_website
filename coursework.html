@@ -37,25 +37,33 @@
         <p class="text add-top-margin add-bottom-margin"> The table below is a convenient way to sort the classes I've taken in a few different ways; for a complete list, see below! </p>
         <div id="classButtons">
           <button class="btn active" onclick="filterSelection('all')"> All Classes</button>
-          <button class="btn" onclick="filterSelection('cars')"> Technical Only </button>
-          <button class="btn" onclick="filterSelection('animals')"> Graded Only </button>
-          <button class="btn" onclick="filterSelection('fruits')"> EE </button>
-          <button class="btn" onclick="filterSelection('colors')"> CS </button>
+          <button class="btn" onclick="filterSelection('tech')"> Technical Only </button>
+          <button class="btn" onclick="filterSelection('gr')"> Graded Only </button>
+          <button class="btn" onclick="filterSelection('ee')"> EE only </button>
+          <button class="btn" onclick="filterSelection('cs')"> CS only </button>
+          <button class="btn" onclick="filterSelection('ud')"> Upper Div only </button>
         </div>
         <div class="container">
-          <div class="filterDiv cars">BMW</div>
-          <div class="filterDiv colors fruits">Orange</div>
-          <div class="filterDiv cars">Volvo</div>
-          <div class="filterDiv colors">Red</div>
-          <div class="filterDiv cars animals">Mustang</div>
-          <div class="filterDiv colors">Blue</div>
-          <div class="filterDiv animals">Cat</div>
-          <div class="filterDiv animals">Dog</div>
-          <div class="filterDiv fruits">Melon</div>
-          <div class="filterDiv fruits animals">Kiwi</div>
-          <div class="filterDiv fruits">Banana</div>
-          <div class="filterDiv fruits">Lemon</div>
-          <div class="filterDiv animals">Cow</div>
+          <div class="filterDiv gr tech ee ud">EE 105</div>
+          <div class="filterDiv gr tech ee ud">EE 130</div>
+          <div class="filterDiv gr tech ee ud">EE 118</div>
+          <div class="filterDiv gr tech ee ud">EE 120</div>
+          <div class="filterDiv gr tech ee">EE 16B</div>
+          <div class="filterDiv gr tech ee">EE 16A</div>
+          <div class="filterDiv gr tech cs ud">CS 162</div>
+          <div class="filterDiv gr tech cs">CS 61A</div>
+          <div class="filterDiv gr tech cs">CS 61B</div>
+          <div class="filterDiv gr tech cs">CS 61C</div>
+          <div class="filterDiv gr tech cs">CS 70</div>
+          <div class="filterDiv gr tech">Math 53C</div>
+          <div class="filterDiv gr tech">Physics 7B</div>
+          <div class="filterDiv ud">History 122AC</div>
+          <div class="filterDiv gr">ColWrit R4B</div>
+          <div class="filterDiv">EE 375</div>
+          <div class="filterDiv">Vis Sci 24</div>
+          <div class="filterDiv">MCB 90D</div>
+          <div class="filterDiv tech cs">CS 9C</div>
+          <div class="filterDiv cs">CS 195</div>
         </div>
       </div>
       <div class="content-table flex-column">
@@ -144,7 +152,7 @@
             <tr style="background-color: rgba(215, 189, 240, 0.25)">
               <td class="text-center"><a href="https://www2.eecs.berkeley.edu/Courses/EE375/" target="_blank">EE 375</a></td>
               <td class="text-left">Teaching Pedagogy, Effective Teaching Techniques</td>
-              <td class="text-center">A</td>
+              <td class="text-center">Pass</td>
               <td class="text-center">Babak Ayazifar</td>
             </tr>
           </tbody>
