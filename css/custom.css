@@ -150,7 +150,7 @@ table, th, td {
 .classBtn:hover {
   transition: 0.3s ease-in-out;
   background: #7876d061;
-  border-radius:10px 10px 10px 10px;
+  border-radius:50px 50px 50px 50px;
 }
 
 .column {
