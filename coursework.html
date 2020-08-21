@@ -49,34 +49,34 @@
         <hr>
         <p class="text add-top-margin add-bottom-margin"> The table below is a convenient way to sort the classes I've taken in a few different ways; for a complete list, see below! </p>
         <div id="classButtons">
-          <button class="btn active" onclick="filterSelection('all')"> All Classes</button>
-          <button class="btn" onclick="filterSelection('tech')"> Technical Only </button>
-          <button class="btn" onclick="filterSelection('gr')"> Graded Only </button>
-          <button class="btn" onclick="filterSelection('ee')"> EE only </button>
-          <button class="btn" onclick="filterSelection('cs')"> CS only </button>
-          <button class="btn" onclick="filterSelection('ud')"> Upper Div only </button>
+          <button class="btn-three active" onclick="filterSelection('all')"> All Classes</button>
+          <button class="btn-three" onclick="filterSelection('tech')"> Technical Only </button>
+          <button class="btn-three" onclick="filterSelection('gr')"> Graded Only </button>
+          <button class="btn-three" onclick="filterSelection('ee')"> EE only </button>
+          <button class="btn-three" onclick="filterSelection('cs')"> CS only </button>
+          <button class="btn-three" onclick="filterSelection('ud')"> Upper Div only </button>
         </div>
         <div class="container">
-          <div class="filterDiv gr tech ee ud">EE 105</div>
-          <div class="filterDiv gr tech ee ud">EE 130</div>
-          <div class="filterDiv gr tech ee ud">EE 118</div>
-          <div class="filterDiv gr tech ee ud">EE 120</div>
-          <div class="filterDiv gr tech ee">EE 16B</div>
-          <div class="filterDiv gr tech ee">EE 16A</div>
-          <div class="filterDiv gr tech cs ud">CS 162</div>
-          <div class="filterDiv gr tech cs">CS 61A</div>
-          <div class="filterDiv gr tech cs">CS 61B</div>
-          <div class="filterDiv gr tech cs">CS 61C</div>
-          <div class="filterDiv gr tech cs">CS 70</div>
-          <div class="filterDiv gr tech">Math 53C</div>
-          <div class="filterDiv gr tech">Physics 7B</div>
-          <div class="filterDiv ud">His. 122AC</div>
-          <div class="filterDiv gr">ColWrit R4B</div>
-          <div class="filterDiv">Vis Sci 24</div>
-          <div class="filterDiv">MCB 90D</div>
-          <div class="filterDiv tech cs">CS 9C</div>
-          <div class="filterDiv cs">CS 195</div>
-          <div class="filterDiv">EE 375</div>
+          <div class="classFiltering gr tech ee ud">EE 105</div>
+          <div class="classFiltering gr tech ee ud">EE 130</div>
+          <div class="classFiltering gr tech ee ud">EE 118</div>
+          <div class="classFiltering gr tech ee ud">EE 120</div>
+          <div class="classFiltering gr tech ee">EE 16B</div>
+          <div class="classFiltering gr tech ee">EE 16A</div>
+          <div class="classFiltering gr tech cs ud">CS 162</div>
+          <div class="classFiltering gr tech cs">CS 61A</div>
+          <div class="classFiltering gr tech cs">CS 61B</div>
+          <div class="classFiltering gr tech cs">CS 61C</div>
+          <div class="classFiltering gr tech cs">CS 70</div>
+          <div class="classFiltering gr tech">Math 53C</div>
+          <div class="classFiltering gr tech">Physics 7B</div>
+          <div class="classFiltering ud">His. 122AC</div>
+          <div class="classFiltering gr">ColWrit R4B</div>
+          <div class="classFiltering">Vis Sci 24</div>
+          <div class="classFiltering">MCB 90D</div>
+          <div class="classFiltering tech cs">CS 9C</div>
+          <div class="classFiltering cs">CS 195</div>
+          <div class="classFiltering">EE 375</div>
         </div>
       </div>
       <div class="content-table flex-column">
@@ -266,7 +266,7 @@
   filterSelection("all")
   function filterSelection(c) {
     var x, i;
-    x = document.getElementsByClassName("filterDiv");
+    x = document.getElementsByClassName("classFiltering");
     if (c == "all") c = "";
     // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
     for (i = 0; i < x.length; i++) {
@@ -302,7 +302,7 @@
 
   // Add active class to the current control button (highlight it)
   var btnContainer = document.getElementById("classButtons");
-  var btns = btnContainer.getElementsByClassName("btn");
+  var btns = btnContainer.getElementsByClassName("btn-three");
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
       var current = document.getElementsByClassName("active");

@@ -99,7 +99,7 @@ table, th, td {
   background-color: rgba(100, 200, 170, 0.15) !important;
 }
 
-.filterDiv {
+.classFiltering {
   float: left;
   background-color: #2196F3;
   color: #ffffff;
@@ -120,7 +120,7 @@ table, th, td {
 }
 
 /* Style the buttons */
-.btn {
+.classBtn {
   border: none;
   outline: none;
   padding: 12px 16px;
@@ -128,10 +128,10 @@ table, th, td {
   cursor: pointer;
 }
 
-.btn:hover {
+.classBtn:hover {
   background-color: #ddd;
 }
 
-.btn.active {
+.classBtn.active {
   background-color: #666;
   color: white;
