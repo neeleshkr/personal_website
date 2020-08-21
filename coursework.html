@@ -49,12 +49,12 @@
         <hr>
         <p class="text add-top-margin add-bottom-margin"> The table below is a convenient way to sort the classes I've taken in a few different ways; for a complete list, see below! </p>
         <div id="classButtons">
-          <button class="btn-three active" onclick="filterSelection('all')"> All Classes</button>
-          <button class="btn-three" onclick="filterSelection('tech')"> Technical Only </button>
-          <button class="btn-three" onclick="filterSelection('gr')"> Graded Only </button>
-          <button class="btn-three" onclick="filterSelection('ee')"> EE only </button>
-          <button class="btn-three" onclick="filterSelection('cs')"> CS only </button>
-          <button class="btn-three" onclick="filterSelection('ud')"> Upper Div only </button>
+          <button class="classBtn active" onclick="filterSelection('all')"> All Classes</button>
+          <button class="classBtn" onclick="filterSelection('tech')"> Technical Only </button>
+          <button class="classBtn" onclick="filterSelection('gr')"> Graded Only </button>
+          <button class="classBtn" onclick="filterSelection('ee')"> EE only </button>
+          <button class="classBtn" onclick="filterSelection('cs')"> CS only </button>
+          <button class="classBtn" onclick="filterSelection('ud')"> Upper Div only </button>
         </div>
         <div class="container">
           <div class="classFiltering gr tech ee ud">EE 105</div>
@@ -302,7 +302,7 @@
 
   // Add active class to the current control button (highlight it)
   var btnContainer = document.getElementById("classButtons");
-  var btns = btnContainer.getElementsByClassName("btn-three");
+  var btns = btnContainer.getElementsByClassName("classBtn");
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
       var current = document.getElementsByClassName("active");
