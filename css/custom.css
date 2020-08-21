@@ -44,6 +44,13 @@ a:hover {
   color: #353296;
 }
 
+a.anchor{
+  display: block;
+  position: relative;
+  top: -85px;
+  visibility: hidden;
+}
+
 h1 {
   font-size: 18pt;
   margin: 0 0 0 0;
@@ -101,10 +108,10 @@ table, th, td {
 
 .classFiltering {
   float: left;
-  background-color: #2196F3;
+  background-color: #0a4d82ba;
   color: #ffffff;
   width: 100px;
-  line-height: 100px;
+  line-height: 40px;
   text-align: center;
   margin: 2px;
   display: none;
