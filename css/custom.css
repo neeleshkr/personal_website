@@ -138,15 +138,16 @@ table, th, td {
   border: 1px solid #91C9FF;
   outline: none;
   transition: 0.3s ease-in-out;
-  border-radius:50%;
+  border-radius:50px 50px 50px 50px;
 }
 
 .classBtn.active {
   background: #7876d061;
   border: 1px solid #ff91cb;
+  border-radius:10px 10px 10px 10px;
 }
 
 .classBtn:hover {
   transition: 0.3s ease-in-out;
   background: #7876d061;
-}
+  border-radius:10px 10px 10px 10px;
