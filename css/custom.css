@@ -151,3 +151,16 @@ table, th, td {
   transition: 0.3s ease-in-out;
   background: #7876d061;
   border-radius:10px 10px 10px 10px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
