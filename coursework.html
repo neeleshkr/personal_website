@@ -319,11 +319,11 @@
 
     x = document.getElementsByClassName("classFiltering");
     for (i = 0; i < x.length; i++) {
-      var show = false;
+      var show = true;
       activeCategories.forEach(function(item, index, array) {
         if (x[i].className.indexOf(item) <= -1) show = false;
       })
-      if (show || activeCategories.length == 0) w3AddClass(x[i], "show");
+      if (show && activeCategories.length > 0) w3AddClass(x[i], "show");
     }
   }
 
