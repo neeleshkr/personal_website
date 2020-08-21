@@ -309,9 +309,12 @@
   var btns = btnContainer.getElementsByClassName("classBtn");
   for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = "classBtn";
-      this.className += " active";
+      if (this.className === "classBtn active") {
+        this.className = "classBtn"
+      }
+      else {
+        this.className = "classBtn active"
+      }
     });
   }
 </script>
