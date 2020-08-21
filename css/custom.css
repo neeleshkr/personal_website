@@ -138,6 +138,7 @@ table, th, td {
   border: 1px solid #91C9FF;
   outline: none;
   transition: 0.3s ease-in-out;
+  border-radius:50%;
 }
 
 .classBtn.active {
