@@ -55,7 +55,7 @@
             <h2 class="add-top-margin">NMOS Device Design</h2>
             <hr>
             <p class="text">
-              In my EE 130 device design class, I used TCAD (Sentaurus Workbench) to numerically simulate the behavior of the custom-designed NMOS device. The channel length was specified at 25 nm based on the current 20 nm CMOS generation. The goal for this project was to become more familiar with how real-world transistors are designed, keeping specifications and tradeoffs in mind. We want to maximize active (on) current and decrease leakage (off) current. As an example, decreasing channel doping causes drain-induced barrier lowering (DIBL), leading to greater leakage current, but increases on-current (higher mobility, less ion-scattering). I explored the effects of such parameters and extracted useful information from the software’s simulation capabilities in order to optimize current consumption (I<sub>on</sub> and I<sub>off</sub>), subthreshold swing, and transconductance. I furthermore used my knowledge of device physics to explain what implications a certain design decision would have, and the rationale behind my choices. As can be expected, most design parameters presented a tradeoff and interacted with each other in complex ways.
+              In my EE 130 device design class, I used TCAD (Sentaurus Workbench) to numerically simulate the behavior of the custom-designed NMOS device. The channel length was specified at 25 nm based on the current 20 nm CMOS generation. The goal for this project was to become more familiar with how real-world transistors are designed, keeping specifications and tradeoffs in mind. We want to maximize active (on) current and decrease leakage (off) current. As an example, decreasing channel doping causes drain-induced barrier lowering (DIBL), leading to greater leakage current, but increases on-current (higher mobility, less ion-scattering). I explored the effects of such parameters and extracted useful information from the software’s simulation capabilities in order to optimize current consumption (I<sub>on</sub> and I<sub>off</sub>), subthreshold swing, and transconductance. I furthermore used my knowledge of device physics to explain what implications a certain design decision would have, and the rationale behind my choices. As can be expected, most design parameters presented a tradeoff, and they interacted with each other in complex ways.
             </p>
             <p class="text">
               The software self-consistently solves the electrostatics equations for a given set of device parameters to numerically determine the current at different applied gate and drain voltages. It also constructs images of device layouts for visualization purposes. The parameters experimented with include channel doping, source/drain extension depths, various dopant concentrations, the gate-dielectric spacer length, and others. By optimizing the parameters, I achieved an I_<sub>on</sub> to I_<sub>off</sub> ratio of 1.04 * 10<sup>18</sup>, 21 times better than the default value. Please <a rel="noopener noreferrer" target="_blank" href="mailto:neelesh.r@berkeley.edu">email me</a> for a copy of the full report, including tables and figures outlining my findings such as the sample ones below.
@@ -73,15 +73,25 @@
             <h2 class="add-top-margin">BJT/MOS Amplifier Designs</h2>
             <hr>
             <p class="text">
-              For my EE 105 class, although we were not assigned the large-scale final multistage amplifier design due to COVID-19, our labs consisted of single-stage BJT and MOS amplifier designs. In the lab, we first characterized device behavior for a diode and BJT, connecting our experimentally observed curves to the physics behind them. Once we learned about DC biasing of transistors using resistive voltage dividers, we constructed amplifier circuits and measured performance with varying component values, experimentally and in simulation (LTspice).
+              For my EE 105 class, our final labs consisted of single-stage BJT and MOS amplifier designs. In the preliminary labs, we characterized device behavior for a diode and BJT using a Semiconductor Parameter Analyzer (Agilent 4155C), connecting our experimentally observed curves to the physics behind them. We used SpaZilla, a Labview program, for instrument control and data acquisition. One of the important tasks at this stage was characterizing the capacitances; there was parasitic capacitance (from the breadboard and equipment) and component capacitance. By noting that these capacitances are in parallel, we could measure the cutoff frequency for different bias voltages, construct a graph, and linearly extrapolate the zero-bias capacitance.
+            </p>
+            <p class="text">
+              Once we learned about DC biasing of transistors using resistive voltage dividers, we constructed amplifier circuits and measured performance with varying component values, experimentally and in simulation (LTspice). With practice, biasing and analyzing transistor-based circuit configurations became much more intuitive.
             </p>
           </div>
           <div class="flex-item flex-column">
             <h2 class="add-top-margin">Cooke Triplet Optical Device Optimization</h2>
             <hr>
             <p class="text">
-              todo
+              A Cooke Triplet is a 3-lens configuration that, when designed well, can entirely remove second-order aberrations (monochromatic and chromatic both) and function as an effective imaging device. However, each lens has two surfaces which can have varying radii of curvature and can be made of different materials, and the lenses have distances between them, so there are many variables involved.
             </p>
+            <p class="text">
+              We used Zemax Optical Studio for our analysis of the Cooke Triplet, and observed ray fan plots, spot diagrams, vignetting diagrams, and more to optimize the system. We also analyzed the parameter tolerances to gauge the most important variables (that is, which variables were most sensitive, and had to be given highest fine-tuning priority). For more details about the tools used and the design process, please see our presentation below or our design report.
+            </p>
+            <div class="iframe-container">
+              <iframe src="CookeTripletPresentation.pdf" width="70%" height="900px"></iframe>
+            </div>
+            <p>
           </div>
           <div class="flex-item flex-column">
             <h2 class="add-top-margin">World Game Generation</h2>
