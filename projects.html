@@ -55,25 +55,25 @@
             <h2 class="add-top-margin">NMOS Device Design</h2>
             <hr>
             <p class="text">
-              In my EE 130 device design class, I used TCAD (Sentaurus Workbench) to numerically simulate the behavior of the custom-designed NMOS device. The channel length was specified at 25 nm based on the current 20 nm CMOS generation. The goal for this project was to become more familiar with how real-world transistors are designed, keeping specifications and tradeoffs in mind. As an example, decreasing channel doping causes drain-induced barrier lowering (DIBL), leading to greater leakage current, but increases on-current (higher mobility, less ion-scattering). I explored the effects of such parameters and extracted useful information from the software’s simulation capabilities in order to optimize current consumption (I<sub>on</sub> and I<sub>off</sub>), subthreshold swing, and transconductance. I furthermore used my knowledge of device physics to explain what implications a certain design decision would have, and the rationale behind my choices. As can be expected, most design parameters presented a tradeoff and interacted with each other in complex ways.
+              In my EE 130 device design class, I used TCAD (Sentaurus Workbench) to numerically simulate the behavior of the custom-designed NMOS device. The channel length was specified at 25 nm based on the current 20 nm CMOS generation. The goal for this project was to become more familiar with how real-world transistors are designed, keeping specifications and tradeoffs in mind. We want to maximize active (on) current and decrease leakage (off) current. As an example, decreasing channel doping causes drain-induced barrier lowering (DIBL), leading to greater leakage current, but increases on-current (higher mobility, less ion-scattering). I explored the effects of such parameters and extracted useful information from the software’s simulation capabilities in order to optimize current consumption (I<sub>on</sub> and I<sub>off</sub>), subthreshold swing, and transconductance. I furthermore used my knowledge of device physics to explain what implications a certain design decision would have, and the rationale behind my choices. As can be expected, most design parameters presented a tradeoff and interacted with each other in complex ways.
             </p>
             <p class="text">
               The software self-consistently solves the electrostatics equations for a given set of device parameters to numerically determine the current at different applied gate and drain voltages. It also constructs images of device layouts for visualization purposes. The parameters experimented with include channel doping, source/drain extension depths, various dopant concentrations, the gate-dielectric spacer length, and others. By optimizing the parameters, I achieved an I_<sub>on</sub> to I_<sub>off</sub> ratio of 1.04 * 10<sup>18</sup>, 21 times better than the default value. Please <a rel="noopener noreferrer" target="_blank" href="mailto:neelesh.r@berkeley.edu">email me</a> for a copy of the full report, including tables and figures outlining my findings such as the sample ones below.
             </p>
           </div>
           <p class="text text-center graph-title no-top-margin">
-            Table of data showing experiments run with varying dielectric spacer length L<sub>sp</sub>. Default shown in red.
+            Data from Experiments Run with Varying Dielectric Spacer Length L<sub>sp</sub>. Default Shown in Red.
           </p>
-          <img class="image no-top-margin max-width-400 center" src="img/Lsp_table.PNG">
+          <img class="image center" src="img/Lsp_table.PNG">
           <p class="text text-center graph-title no-top-margin">
-            Graph of current consuption at varying dielectic spacer lengths. The tradeoff between I<sub>on</sub> and I<sub>off</sub> is clear.
+            Graph of Current Consuption at Varying Dielectic Spacer Lengths (note I<sub>on</sub> and I<sub>off</sub> tradeoff).
           </p>
-          <img class="image no-top-margin max-width-400 center" src="img/Lsp_graph.PNG">
+          <img class="image center" src="img/Lsp_graph.PNG">
           <div class="flex-item flex-column">
             <h2 class="add-top-margin">BJT/MOS Amplifier Designs</h2>
             <hr>
             <p class="text">
-              For my EE 105 class, although we were not assigned the large-scale final multistage amplifier design due to COVID-19, our labs consisted of single-stage BJT and MOS amplifier designs. In the lab, we first characterized device behavior for a diode and BJT
+              For my EE 105 class, although we were not assigned the large-scale final multistage amplifier design due to COVID-19, our labs consisted of single-stage BJT and MOS amplifier designs. In the lab, we first characterized device behavior for a diode and BJT, connecting our experimentally observed curves to the physics behind them. Once we learned about DC biasing of transistors using resistive voltage dividers, we constructed amplifier circuits and measured performance with varying component values, experimentally and in simulation (LTspice).
             </p>
           </div>
           <div class="flex-item flex-column">
