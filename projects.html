@@ -77,15 +77,6 @@
       color: white;
     }
 
-    /* Number text (1/3 etc) */
-    .slidesNumbertext {
-      color: #f2f2f2;
-      font-size: 14px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-
     /* The dots/bullets/indicators */
     .slidesDot {
       cursor: pointer;
@@ -95,11 +86,11 @@
       background-color: #9dabbd;
       border-radius: 50%;
       display: inline-block;
-      transition: background-color 0.6s ease;
+      transition: background-color 0.3s ease;
     }
 
     .slidesDot:hover {
-      background-color: #1f4980;
+      background-color: #476894;
     }
 
     .slidesDot.active {
@@ -194,38 +185,49 @@
             <h2 class="add-top-margin">World Game Generation</h2>
             <hr>
             <p class="text">
-              Our final CS 61B project was to create a game; the core constraints were that the tile-based environment must be randomly generated, there must be some kind of avatar that is user controlled, and there must be a way to "win" or complete the game. We took these core concepts and built a remarkably intricate game that we and friends genuinely enjoyed playing, beyond just for the class. The gameplay was as follows:
+              Our final CS 61B project was to create a game; the core constraints were that the tile-based environment must be (pseduo-)randomly generated, and for extra credit, there must be some kind of avatar that is user controlled, and there must be a way to "win" or complete the game. We took these concepts and built a remarkably intricate game that we and friends genuinely enjoyed playing, beyond just for the class. The gameplay was as follows (taken directly from our "folklore/background" section of the project:
             </p>
             <p class="text">
-              Your avatar is a star, and you must explore each world (maze in a grid of tiles). Once you find the yellow door, it'll unlock, leading you to darker world. Several enemies intelligently chase you (dfs short-path finding, accounting for walls) as you move around the map; don't get caught! you have 3 lives to begin with, but don't worry; collect purple flowers for a chance to gain a life. Seems the flowers are on your side; the less health you have, the more likely they are to help you. As you traverse the map, the tiles you've already crossed become progressively darker, until after 3 passes, they become lava! Touching those will drain your life, so be sure to think ahead. </p>
+              The goal of the game is as follows: you control an avatar, the white star. It's tiny, but persistent. By using the WASD keys to move around, you can avoid the menacing exclamation marks (!) following you around. You may be steadfast in your willingness to get to the end point, but they're equally motivated to make sure that never happens. You ultimately want to get to the yellow locked door to win the game and attain absolute glory. Be careful, there are some specific rules to follow. Once you traverse a tile, it becomes more red, and eventually, it'll become a deadly lava tile, indicated by the presence of an emoji! If you go over a lava tile, you lose a life (you have 3 total to begin with). If the (!) hits you, you lose a life. Try and collect flowers! They're on your side; the less health you have, the more likely they are to help you and grant a life. Each turn, you also have a chance to generate new flowers! Don't worry about running out 😄
+            </p>
             <p class="text">
               As a user, you can toggle the wall color scheme, see an interesting bit of background for the game, toggle a super-hard mode, and customize your gameplay. As a programmer, you can do so much more; alter the room-generation algorithm to make easer/harder maps, modify the enemy behavior, change the spawn frequency and helpfulness of flowers; the list is endless. Take a look below for an idea of how the game looks!
             </p>
-            <p> images: main screen, starting point, opaque levels 1 and 2, folklore, video: locked/unlocked doors, enemies chasing, music, etc. </p>
             <div class="slideshow-container">
             <!-- Full-width images with number and caption text -->
               <div class="mySlides fade">
-                <img src="img/book.png" style="width:100%">
-                <div class="slidesNumbertext">1 / 3</div>
+                <img src="img/cs61b_home.png" style="width:100%">
               </div>
               <div class="caption-container">
-                <p class="slidesCaption">cap 1</p>
+                <p class="slidesCaption">The game's home page</p>
               </div>
 
               <div class="mySlides fade">
-                <img src="img/cs61b_startsample.png" style="width:100%">
-                <div class="slidesNumbertext">2 / 3</div>
+                <img src="img/cs61b_startsample2.png" style="width:100%">
               </div>
               <div class="caption-container">
-                <p class="slidesCaption">cap 2</p>
+                <p class="slidesCaption">A colorful starting world.</p>
               </div>
 
               <div class="mySlides fade">
-                <img src="img/close.png" style="width:100%">
-                <div class="slidesNumbertext">3 / 3</div>
+                <img src="img/cs61b_startsample_nocolor.png" style="width:100%">
               </div>
               <div class="caption-container">
-                <p class="slidesCaption">cap 3</p>
+                <p class="slidesCaption">A not-so-colorful starting world.</p>
+              </div>
+
+              <div class="mySlides fade">
+                <img src="img/cs61b_lavatrail.png" style="width:100%">
+              </div>
+              <div class="caption-container">
+                <p class="slidesCaption">Creating a trail of lava tiles behind me (not so smart!)</p>
+              </div>
+
+              <div class="mySlides fade">
+                <img src="img/cs61b_unlockeddoor1.png" style="width:100%">
+              </div>
+              <div class="caption-container">
+                <p class="slidesCaption">Unlocking a door makes the world darker, with a torchlight-effect around the avatar.</p>
               </div>
 
               <!-- Next and previous buttons -->
