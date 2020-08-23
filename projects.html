@@ -74,13 +74,6 @@
       text-align: center;
       background-color: #222;
       padding: 2px 16px;
-      color: red;
-    }
-
-    .caption-container {
-      text-align: center;
-      background-color: #222;
-      padding: 2px 16px;
       color: white;
     }
 
@@ -107,14 +100,10 @@
 
     .slidesDot:hover {
       background-color: #1f4980;
-      height: 20px;
-      width: 20px;
     }
 
     .slidesDot.active {
       background-color: #1f4980;
-      height: 20px;
-      width: 20px;
     }
 
     /* Fading animation */
@@ -220,7 +209,7 @@
                 <div class="slidesNumbertext">1 / 3</div>
               </div>
               <div class="caption-container">
-                <p id="slidesCaption">cap 1</p>
+                <p class="slidesCaption">cap 1</p>
               </div>
 
               <div class="mySlides fade">
@@ -228,7 +217,7 @@
                 <div class="slidesNumbertext">2 / 3</div>
               </div>
               <div class="caption-container">
-                <p id="slidesCaption">cap 2</p>
+                <p class="slidesCaption">cap 2</p>
               </div>
 
               <div class="mySlides fade">
@@ -236,7 +225,7 @@
                 <div class="slidesNumbertext">3 / 3</div>
               </div>
               <div class="caption-container">
-                <p id="slidesCaption">cap 3</p>
+                <p class="slidesCaption">cap 3</p>
               </div>
 
               <!-- Next and previous buttons -->
@@ -301,7 +290,7 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("slidesDot");
-  var captionText = document.getElementById("slidesCaption");
+  var captionText = document.getElementsByClassName("slidesCaption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
