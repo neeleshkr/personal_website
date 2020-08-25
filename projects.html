@@ -145,17 +145,13 @@
             <p class="text">
               <u>Projects:</u> Electrical's design season is spent on projects to further the performance of the car, such as PCB designing, live-telemetry for data acquisition in real-time, a board and casing to house the 6-axis accelerometer and gyroscope, and a dash PCB for shifting lights to indicate the ideal time to shift gears based on a torque-power mapping. For example, I significantly optimized the design and performance of a board called the Brake Plausibility Device (BPD). The board had to shut off the car in the event of a critical failure to protect the driver. For example, suppose that while running the car, a rock got lodged in the throttle, keeping it open at all times. Then, even if the driver pressed the brakes, they wouldn't be able to stop; the BPD had to contain the logic to detect that something must be wrong in such situations and shut off power to the car. This functionality was achieved with transistor-based logic.
             </p>
-            <div class="row">
-              <div class="column">
-                <img class="image max-width-400" src="img/BFRSittingInCar.JPG" style="width:100%;">
-                <p class="image-caption">Me sitting in our B19 competition car!</p>
-              </div>
-              <div class="column">
-                <img class="image max-width-400" src="img/BFRCarWiring.jpg" style="width:100%;margin-left:20px;margin-right:0px;margin-top:10px;margin-bottom:10px;">
-                <p class="image-caption">Some Initial Car Wiring!</p>
-              </div>
+            <p class="text text-center graph-title no-top-margin" style="margin-left:auto;margin-right:auto;">
+              Me sitting in our B19 competition car!
+            </p>
+            <img class="image center" src="img/BFRSittingInCar.JPG" style="width:600px;margin-left:auto;margin-right:auto;">
             </div>
-            <p class="text20px">
+            <p class="text">
+              <img class="image max-width-400" src="img/BFRCarWiring.jpg" style="width:200px%;margin-left:0px;margin-right:20px;margin-top:10px;margin-bottom:10px;">
               <u>Manufacturing:</u> Another primary responsiblity of Electrical is to ensure the mechanical robustness of the 3 primary wire harnesses; Power (ensure all components are powered), ECU (Engine Control Unit), and ADL (sensor data collection). By modularizing the harness bundle into 3 components, we made it much easier to debug and place on the car. As an example, a high-level design for our power harness can be found <a href="project_materials/PowerHarnessDiagramB20.pdf" target="_blank">here</a>. We also placed labels on each wire to avoid time-consuming multimeter continuity checks, easily saving several dozen man-hours over the years. A large amount of our production time is spent on these harnesses; ordering materials, manufacturing, placing the harnesses on the car, and debugging as issues come up in testing.
             </p>
           </div>
