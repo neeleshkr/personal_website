@@ -175,10 +175,12 @@ table, th, td {
 
 ul, li {margin-left: 1em; padding-left: 5px;}
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.header-outer {
+  display: table;
+  width: 100%;
 }
-
-li.dropdown {
-  display: inline-block;
+.header-inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
