@@ -152,7 +152,7 @@
             <a class="anchor" id="bfr"></a>
     				<hr>
             <u class="highlightSection">Highlights:</u>
-            <ul>
+            <ul style="padding-left: 10px">
               <li> B19: 16th out of 80 competitive teams </li>
               <li> Design Projects: PCB Design, Telemetry, Solid Parts </li>
               <li> Manufacturing: Efficient Workflow, Modularizing Harnesses, Easy Debug Mechanism </li>
@@ -210,7 +210,7 @@
               <u>Background / Motivation:</u> In my EE 130 device design class, I used TCAD (Sentaurus Workbench) to numerically simulate the behavior of a custom-designed NMOS device. The channel length was specified at 25 nm (based on the 20 nm CMOS generation). The goal for this project was to become familiar with how practical transistors are designed, keeping specifications and tradeoffs in mind. We want to maximize active (on) current and decrease leakage (off) current. As an example, decreasing channel doping causes drain-induced barrier lowering (DIBL), leading to greater leakage current, but increases on-current (higher mobility, less ion-scattering). I explored the effects of such parameters and extracted useful information from the software in order to optimize current consumption (I<sub>on</sub> and I<sub>off</sub>), subthreshold swing, and transconductance. I furthermore used my knowledge of device physics to explain what implications a certain design decision would have, and the rationale behind my choices.
             </p>
             <p class="text">
-              <u>Software Details / Results:</u> The software self-consistently solves the electrostatics equations for a given set of device parameters to numerically determine the current at different applied gate and drain voltages. It also constructs images of device layouts for visualization. The parameters experimented with include channel doping, source/drain extension depths, various dopant concentrations, the gate-dielectric spacer length, and others. By optimizing the parameters, I achieved an I_<sub>on</sub> to I_<sub>off</sub> ratio of 1.04 * 10<sup>18</sup>, 21 times better than the default value. Please <a rel="noopener noreferrer" target="_blank" href="mailto:neelesh.r@berkeley.edu">email me</a> for a copy of the full report, including tables and figures outlining my findings such as the sample ones below.
+              <u>Software Details / Results:</u> The software self-consistently solves the electrostatics equations for a given set of device parameters to numerically determine the current at different applied gate and drain voltages. It also constructs images of device layouts for visualization. The parameters experimented with include channel doping, source/drain extension depths, various dopant concentrations, the gate-dielectric spacer length, and others. By optimizing the parameters, I achieved an I<sub>on</sub> to I<sub>off</sub> ratio of 1.04 * 10<sup>18</sup>, 21 times better than the default value. Please <a rel="noopener noreferrer" target="_blank" href="mailto:neelesh.r@berkeley.edu">email me</a> for a copy of the full report, including tables and figures outlining my findings such as the sample ones below.
             </p>
           </div>
           <p class="text text-center graph-title no-top-margin" style="margin-left:auto;margin-right:auto;">
