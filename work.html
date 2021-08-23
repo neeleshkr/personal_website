@@ -56,14 +56,23 @@
       	<div class="flex-row">
           <div class="flex-item flex-column">
             <div style="width:20%">
-              <div> <h2 style="display:inline" class="add-top-margin">Apple <img class="image max-width-400" src="img/apple-logo.png" style="width:75px;margin-left:0px;margin-right:20px;margin-top:0px;margin-bottom:-10px;display:inline"></h2> </div>
+              <div> <h2 style="display:inline" class="add-top-margin">Apple (Summer 2021)</div>
             </div>
             <a class="anchor" id="apple"></a>
             <hr>
-            In Summer 2021, I will be working at Apple as a Chip Design Verification Intern for 14 weeks. This section will be updated after my internship ends!
+            <u class="highlightSection">Highlights:</u>
+            <ul>
+              <li> Designed, built, and incorporated a scripting infrastructure from scratch (Python3, YAML/JSON)  </li>
+              <li> Converted a chip-level testbench (TB) into a block-level one; 85% lower build/run times.  </li>
+              <li> Designed a new interface to aid functional coverage of module signals. </li>
+              <li> Learned: System Verilog, UVM, Functional Coverage (Collection and Analysis) </li>
+            </ul>
           </div>
+          <p class="text">
+              In 14-weeks, I worked on 3 separate projects as part of the PMGR SOC DV team at Apple. The technical details I can divulge are covered in the highlights. Despite being remote, my experience was incredibly rewarding; my team was very supportive, with smooth onboarding and continued support, enabling me to make meaningful contributions to Apple's DV infrastructure.
+            </p>
 	        <div class="flex-item flex-column">
-    				<h2 class="add-top-margin">MuMec Inc.</h2>
+    				<h2 class="add-top-margin">MuMec Inc. (Summer 2020)</h2>
     				<a class="anchor" id="mumec"></a>
     				<hr>
   					<u class="highlightSection">Highlights:</u>
@@ -75,11 +84,11 @@
 							<li> Hand-soldering (0402) and reflow soldering (0201, BGA) </li>
 						</ul>
     				<p class="text">
-    					<u>What I Accomplished:</u> In this 10-week internship, I built, programmed, and tested a custom hearing aid device. Most details are proprietary (as are the cool pictures I have), but as an overview, I worked on several aspects of the project: I fine-tuned the DSP parameters of the IC to ensure optimal performance for various operating conditions. Along the way, I validated the core chipset extensively using test equipment and a development board. Since I was the only person working on this project, I completed full-stack board bring-up, including the hardware, firmware and software components of the project. As a secondary feature for the hearing aid, I laid the groundwork for Bluetooth Speech-To-Text capabilities. In the process of hardware manufacturing and debugging, I did a <i>lot</i> of hand-soldering and reflow soldering, spending nearly 10 hours a week in front of the iron and fume extractor. I performed precision hand-soldering (0402-sized components) and learned reflow soldering for smaller (0201) components and ball-grid arrays (BGA).
+    					In this 10-week internship, I built, programmed, and tested a custom hearing aid device. As a solo engineer on the project, this work included fine-tuning the DSP parameters of the IC, validating the core chipset using test equipment and a development board, and completing full-stack board bring-up of the hardware, firmware and software. As a secondary feature, I laid the groundwork for Bluetooth Speech-To-Text capabilities. hardware manufacturing and debugging, I did a <i>lot</i> of hand-soldering and reflow soldering, spending nearly 10 hours a week in front of the iron and fume extractor. I performed precision hand-soldering (0402-sized components) and learned reflow soldering for smaller (0201) components and ball-grid arrays (BGA).
     				</p>
     				<p class="text">
     					<img class="image image-wrap-text max-width-400" src="img/mumec.png" style="float:right;width:300px;margin-left:20px;margin-right:0px;margin-top:10px;margin-bottom:10px;">
-    					<u>Motivation:</u> The development of a next-gen, hyper-performant hearing aid is necessary, as the market is shifting its focus to certain key areas, such as dealing with increased algorithmic complexity, enabling more powerful chips in smaller packages, and incorporating firmware-over-the-air technologies. But modern hearing aids are already quite effective; introducing fundamentally unique features, such as what I worked on, could signal a paradigm-shift in education-based applications, and this is what I focused most on. I'd also worked on <a href="projects#signify">a project</a> with a similar focus for a hackathon, so it aligned quite well with my background and expertise. MuMec is still continuing this project, but for details on the background and market research that motivated me to dive into this project, see <a href="project_materials/mumec-background.pdf" target="_blank">here</a>.
+    					The development of a next-gen hearing aid is necessary to deal with increased algorithmic complexity, enable more powerful chips in smaller packages, and incorporate firmware-over-the-air technologies. While modern hearing aids are already effective, introducing unique features such as what I worked on could signal a paradigm-shift in education-based applications, and this is what I focused most on. I'd also worked on <a href="projects#signify">a project</a> with a similar focus, so it aligned quite well. MuMec is still continuing this project, but for more background details, see <a href="project_materials/mumec-background.pdf" target="_blank">here</a>.
     				</p>
           </div>
     			<div class="flex-item flex-column">
@@ -93,14 +102,14 @@
 							<li> Synchronize Company Documents (BOMs, proposals, inventory, etc.) </li>
 						</ul>
     				<p class="text">
-    					<u>Background:</u> This internship sparked my passion for electrical engineering specifically, as opposed to physics or math as core disciplines. My first week, I shadowed the VP of Engineering and lab technicians as they used hardware test equipment (polarizers, oscilloscopes, function generators, spectrum analyzers, and more) to evaluate the performance of their hardware units. By the second week, I was collecting and sometimes even evaluating data myself from these units.
+    					<u>Background:</u> This internship sparked my passion for electrical engineering specifically, as opposed to physics or math as core disciplines. My first week, I shadowed the VP of Engineering and lab technicians as they used hardware test equipment (polarizers, oscilloscopes, function generators, spectrum analyzers, and more) to evaluate the performance of hardware units. By the second week, I was collecting and even evaluating such data myself.
     				</p>
     				<p class="text">
-    					<u>Project 1: Network Model Optimization:</u> The middle chunk of my internship constitued the largest and most technically involved part; optimizing an optical network performance model. ATX had an Excel program that they used to construct the telecom solutions for their clients. The design engineer would manually alter a whole host of parameters; the channel wavelengths, the distances between units, the gain at each stage, and more. The ultimate goal was to optimize the signal-to-noise ratio (SNR). I wasn't originally assigned to work on this project, but took the initiative to request work on the rather open-ended task of optimizing this design process. Certainly, there had to be a better way to carry out a paremeter sweep for each variable to optimize the network.
-    					<br> I ended up using a combination of Excel's Solver Add-on and python scripting to decrease the design phase from a matter of days to mere minutes. The scripting process was effectively a hill-climbing algorithm that saved the current optimal stage and intelligently decided what set of parameter variables to test next. The results were astounding; after running the program with initial constraints, the design engineer only had to spend about an hour fine-tuning and double-checking the result. This project significantly optimized a serious bottleneck in the company's design phase.
+    					<u>Project 1: Network Model Optimization:</u> The middle chunk of my internship constitued the largest and most technically involved part; optimizing an optical network performance model. ATX had an Excel program that they used to construct the telecom solutions for their clients. The design engineer would manually alter parameters to optimize the signal-to-noise ratio (SNR).
+    					<br> To automate the process, I used a combination of Excel and Python scripting and decreased the design phase from days to mere minutes. The hill-climbing algorithm saved the current optimal state and intelligently decided what set of parameter variables to test next. After running the program with initial constraints, the design engineer only had to spend about an hour fine-tuning. This project significantly optimized a design bottleneck.
     				</p>
     				<p class="text">
-    					<u>Project 2: Interdepartment Synching</u> Lastly, I was asked to help integrate the information that Sales and Operations used into a comprehensive, efficient platform to avoid miscommunication (Sales making promises that Ops couldn't possibly deliver.) I integrated Excel, Github, and Salesforce to arrive at a solution wherein all bills-of-materials (BOMS), forecast proposals, inventory documents, and more were synchronized. Everyone started to use the workfloe (no more copies of the same document floating around at different times). This greatly streamlined communications and also helped reduce lead-times for ordering parts.
+    					<u>Project 2: Interdepartment Synching</u> Lastly, I was asked to help integrate the information that Sales and Operations used into a comprehensive, efficient platform to avoid inter-team miscommunication. I integrated Excel, Github, and Salesforce to arrive at a solution wherein all bills-of-materials (BOMS), forecast proposals, inventory documents, and more were synchronized. This greatly streamlined communications and also helped reduce lead-times for ordering parts.
     				</p>
     			</div>
     			<div class="flex-item flex-column">
@@ -122,6 +131,17 @@
     				</p>
     			</div>
     			<br> <br> <br>
+        </div>
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2>Skills</h2>
+              <a class="anchor" id="skills"></a>
+              <hr>
+              <p class="text"> <b>Hardware:</b> Board Bringup, Digital Design, System Verilog, UVM, Functional Coverage, Code Coverage, Coverage Analaysis, Design Verification & Validation, Analog Circuit Analysis/Design, Schematic Capture, PCB Design, Chip Testing, Board Testing, Precision Hand-Soldering, Reflow Soldering, Quality Assurance, Digital Signal Processing, Spice (LTspice, Hspice),
+              <p class="text"> <b>Software:</b> Python, Java, C, Perl, Shell, CLI, Git, Numpy/Scipy, Data Structures, Javascript, Data Analysis, Algorithms, OS, Website Development/Design
+              <p class="text" style="margin:0; padding:0;"> <b>Other Technical Tools/Technologies:</b> LaTeX (fluent), Matlab/Octave (proficient), Office Suite (fluent) </p>
+              <p class="text" style="margin:0; padding:0;"> <b>Miscellaneous:</b> Technical Writing, Applied Research, Teaching </p>
+          </div>
         </div>
       </div>
     </div>
